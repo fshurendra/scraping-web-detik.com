@@ -1,3 +1,4 @@
+# Import Packages
 import requests
 from bs4 import BeautifulSoup
 
@@ -21,14 +22,6 @@ def detik_news_populer():
     images = populer_news.findAll(attrs={'class': 'media__image'})
 
     return render_template('index.html', images=images)
-
-
-
-
-
-
-
-
 
 
 

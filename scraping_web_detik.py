@@ -1,3 +1,4 @@
+# Import Packages
 import requests
 from bs4 import BeautifulSoup
 
@@ -12,5 +13,3 @@ images = populer_news.findAll(attrs={'class': 'media__image'})
 
 for image in images:
     print(image.find('a').find('img')['title'])
-
-# print(populer_news)
